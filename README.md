@@ -1,8 +1,6 @@
-# spark-cluster2526 – materiais de aula (spark / pyspark)
+# Notebooks spark
 
 Este repositorio contén **apuntes de teoría** en Markdown e **cadernos Jupyter** con exemplos guiados para traballar con Apache Spark (RDDs, DataFrames e Streaming).
-
-> Os PDFs existen como versión exportada dalgúns apuntes, pero neste README **non se listan** (por petición): referénciase só o material de teoría en `.md`.
 
 ---
 
