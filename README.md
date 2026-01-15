@@ -4,6 +4,22 @@ Este repositorio contén **apuntes de teoría** en Markdown e **cadernos Jupyter
 
 ---
 
+## sobre o entorno de execución
+
+Estes notebooks están pensados para executarse nun clúster local de big data baseado en **Hadoop + Spark + Jupyter**, despregado mediante Docker Compose.
+
+▶️ **Recoméndase empregar o clúster definido no seguinte repositorio:**
+https://github.com/adbgonzalez/big-data-cluster
+
+Ese repositorio fornece:
+- un clúster Hadoop (HDFS + YARN)
+- Apache Spark configurado para a execución de aplicacións sobre YARN
+- un contedor de JupyterLab preparado para traballar con PySpark
+
+As instrucións para montar o entorno completo, clonar os repositorios e arrincar o clúster atópanse no README do repositorio do clúster.
+
+--- 
+
 ## estrutura do repositorio
 
 - [`apuntes_teoría/`](./apuntes_teoría/) → **apuntes de teoría en Markdown** (listados un a un máis abaixo)
