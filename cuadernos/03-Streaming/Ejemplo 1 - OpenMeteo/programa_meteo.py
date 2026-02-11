@@ -5,7 +5,6 @@ from pyspark.sql.types import StructType, DoubleType, IntegerType, StringType
 # Crear SparkSession
 spark = SparkSession.builder \
     .appName("OpenMeteoWindowedToParquet") \
-    .master("local[*]") \
     .config("spark.sql.shuffle.partitions", "2") \
     .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0") \
     .getOrCreate()
@@ -25,7 +24,7 @@ schema = StructType() \
 # Leer desde Kafka
 df_kafka = spark.readStream \
     .format("kafka") \
-    .option("kafka.bootstrap.servers", "kafka-1:9092") \
+    .option("kafka.bootstrap.servers", "kafka:9092") \
     .option("subscribe", "open-meteo-weather") \
     .option("startingOffsets", "latest") \
     .load()
